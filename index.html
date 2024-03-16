@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - El ma mejol</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="calculator" name="calc">
+
+            <input type="text" class="value" id="n1" name="txt" placeholder="0"/>
+            <input type="text" class="value" id="n2"name="txt" placeholder="0"/>
+            <output id="r" class="value"></output> 
+
+            <span class="clear" id="c">c</span>
+            <span class="plus" id="suma" >+</span>
+            <span  id="division">/</span>
+            <span  id="resta" >-</span>
+            <span  id="multiplicacion">*</span>
+            <span class="equal" id="igual" >=</span>
+
+        </form>
+        
+    </div>
+
+    <script src="js/calc.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".container"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+	});
+
+</script>
+</body>
+</html>
